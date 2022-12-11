@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.banner{
+    height: 100vh;
+}
+
+.banner::before{
+    content: '';
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(pattern.png);
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 0 611px;
+    }
+}
+
+/* Developed by Abbas Shaikh 😄 */
